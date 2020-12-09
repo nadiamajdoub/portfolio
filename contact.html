@@ -4,30 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONTAKT</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>KONTAKT</h1>
-    <section class="begin-adventure">
-        <div class="container">
+    <header>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-brand">
+                    <a class="nav-text" href="index.html">NADIAMAJDOUB</a>
+                </div>
 
-            <div class="Kontakt-grid">
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HJEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link">OM MIG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">MIT ARBEJDE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <h1>KONTAKT</h1>
+        <section>
+            <div class="kontakt-grid">
                 <form action="action_page.php">
-              
-                  <label for="fname">Navn:</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Navn..">
-                  <label for="lname">Email:</label>
-                  <input type="text" id="lname" name="email" placeholder="Email..">
-                  <label for="fname">Emne:</label>
-                  <input type="text" id="subject" name="subject" placeholder="Emne..">
-                  <label for="subject">Besked:</label>
-                  <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
-                  <button class="rounded-button">Send</button>
-                    
+                <label for="fname">Navn:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Navn..">
+                <label for="lname">Email:</label>
+                <input type="text" id="lname" name="email" placeholder="Email..">
+                <label for="fname">Emne:</label>
+                <input type="text" id="subject" name="subject" placeholder="Emne..">
+                <label for="subject">Besked:</label>
+                <textarea id="subject" name="subject" placeholder="Skriv her.."></textarea>
+                <button class="rounded-button">Send</button>
                 </form>
             </div>
-            <footer>
-                <p>&copy; 2020 af Nadia Majdoub El-Mais</p>
-            </footer>
+        </section>
+        <div class="social-icons-div">
+            <a target="_blank" href="https://facebook.com/nadiamajdoub">
+                <img class="social-icon" src="images/facebooklogo.png" />
+            </a>
+            <a target="_blank" href="https://instagram.com/nadiamajdoub">
+                <img class="social-icon" src="images/instagramlogo.png"/>
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2020 af Nadia Majdoub El-Mais</p>
+    </footer>
+
+    <script type="text/javascript" src="scripts.js"></script> 
 </body>
 </html>
